@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-main">
+            <div class="header-left">
+                <span><b>Playlist length Analyzer</b></span>
+            </div>
+            <div class="header-right">
+                <button class="toggle"><img src="https://www.svgrepo.com/show/316235/sun.svg" alt="theme"></button>
+                <button class="linkedin" onclick="window.location.href='https://www.linkedin.com/in/shivam-yeshu/';"><img src="https://www.svgrepo.com/show/449804/linkedin.svg" alt="github"></button>
+                <button class="github" onclick="window.location.href='https://github.com/shivamyeshu';"><img src="https://www.svgrepo.com/show/450156/github.svg" alt="github"></button>
+            
+            </div>
+        </div>
+    </header>
+
+    <!-- main function  -->
+
+     <main class="main">
+        <div class="flex-container">
+            <!-- Playlist Section -->
+            <div class="playlist-section">
+                <div class="title">
+                    <span><b>Paste YT Playlist link here :</b></span>
+                </div>
+                
+                <div class="link-input">
+                    <input type="text" id="playlistUrl" placeholder="here">
+                    <button id="btn" onclick="getPlaylistDuration()"><b>Calculate</b></button>
+                </div>
+                
+                <div id="playlistTitle"></div>
+                <div id="result">
+                    <div id="videoCount"></div>
+                    <div id="totalDuration"></div>
+                    <div id="avgDuration"></div>
+                    <div id="duration125x"></div>
+                    <div id="duration15x"></div>
+                    <div id="duration175x"></div>
+                    <div id="duration2x"></div>
+                </div>
+            </div>
+            
+            <!-- Conversion Section -->
+            <div class="conversion-section">
+                <h2>Time Conversion</h2>
+                <div class="conversion-form">
+                    <label for="timeInput">Enter Time (H:M:S):</label>
+                    <input type="text" id="timeInput" placeholder="1:30:00">
+                    <button onclick="convertTime()">Convert</button>
+                </div>
+                <div id="conversionResult"></div>
+            </div>
+        </div>
+    </main>
+    
+
+
+    </main>
+    <footer>
+        <p>Created by <a href="https://www.linkedin.com/in/shivam-yeshu/" target="_blank">Shivamyeshu</a> | &copy; 2024 </p>
+    </footer>  
+    <script src="script.js"></script>
+</body>
+</html>
